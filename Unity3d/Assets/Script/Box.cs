@@ -1,16 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player : MonoBehaviour {
+public class Box : MonoBehaviour {
+
+	public Sprite[] img;
+	SpriteRenderer spriteRenderer;
 
 	// Use this for initialization
 	void Start () {
-	
+		spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
+		
 		if (Input.GetMouseButtonDown(0))
 		{
 
@@ -20,10 +23,13 @@ public class Player : MonoBehaviour {
 
 			if (hit.collider != null)
 			{
-				Debug.Log(hit.collider.name);
-				
+				transform.Translate(new Vector2(0.1f, 0));
+
+				if (spriteRenderer.sprite == img[0])
+					spriteRenderer.sprite = img[1];
+				else spriteRenderer.sprite = img[0];
 			}
+
 		}
-		
 	}
 }
