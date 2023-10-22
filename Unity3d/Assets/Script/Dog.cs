@@ -20,7 +20,7 @@ public class Dog : MonoBehaviour {
 
 			if (hit.collider != null && hit.collider.name == "dog")
 			{
-				transform.Translate(new Vector2(0.1f, 0));
+				transform.Translate(new Vector2(0.3f, 0));
 
 			}
 
