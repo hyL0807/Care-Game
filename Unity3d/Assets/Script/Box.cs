@@ -21,7 +21,7 @@ public class Box : MonoBehaviour {
 
 			RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.zero);
 
-			if (hit.collider != null && hit.collider.name == "Player")
+			if (hit.collider != null && hit.collider.name == "Box")
 			{
 				transform.Translate(new Vector2(0.1f, 0));
 

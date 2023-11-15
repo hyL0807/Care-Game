@@ -8,6 +8,8 @@ public class Train : MonoBehaviour {
 	float xScreenHalfSize;
 	float yScreenHalfSize;
 
+	public static int hp = 3;
+
 	// Use this for initialization
 	void Start () {
 
@@ -21,7 +23,13 @@ public class Train : MonoBehaviour {
 		lPosX = -xScreenHalfSize;
 		rPosX = xScreenHalfSize;
 	}
-	
+
+	void getDamage()
+	{
+		hp -= 1;
+		if (hp < 0) hp = 0;
+	}
+
 	// Update is called once per frame
 	void Update () {
 		
@@ -53,5 +61,8 @@ public class Train : MonoBehaviour {
 				transform.Translate(new Vector2(0, -1.0f));
 			}
 		}
+
 	}
+
+	
 }
