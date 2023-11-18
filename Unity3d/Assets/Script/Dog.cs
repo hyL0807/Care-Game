@@ -5,7 +5,8 @@ public class Dog : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		Debug.Log(Screen.height);
+		Debug.Log(Screen.width);
 	}
 	
 	// Update is called once per frame

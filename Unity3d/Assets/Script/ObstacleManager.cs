@@ -5,7 +5,7 @@ public class ObstacleManager : MonoBehaviour {
 
 	public GameObject fence;
 
-	float spawnTimer = 2.0f;
+	public float spawnTimer = 2.0f;
 
 	float[] yList = new float[3];
 	int idx = 0;
@@ -15,9 +15,9 @@ public class ObstacleManager : MonoBehaviour {
 	// Use this for initialization
 	void Start()
 	{
-		yList[0] = 0.25f;
-		yList[1] = -1.8f;
-		yList[2] = -3.8f;
+		yList[0] = 0.64f;
+		yList[1] = -1.65f;
+		yList[2] = -3.9f;
 
 	}
 	

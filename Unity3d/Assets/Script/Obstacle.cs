@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Obstacle : MonoBehaviour {
 
+	public float speed = 0.1f;
+
 	float lPosX = 0f;
 	float rPosX = 0f;
 	float xScreenHalfSize;
@@ -20,7 +22,7 @@ public class Obstacle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate(new Vector2(-0.1f, 0));
+		transform.Translate(new Vector2(-speed, 0));
 
 		if (transform.position.x < lPosX) Destroy(gameObject);
 	}
