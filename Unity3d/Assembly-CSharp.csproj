@@ -49,12 +49,15 @@
      <Compile Include="Assets\Script\BackgroundScroll.cs" />
      <Compile Include="Assets\Script\Box.cs" />
      <Compile Include="Assets\Script\Dog.cs" />
-     <Compile Include="Assets\Script\HealthStatus.cs" />
-     <Compile Include="Assets\Script\Obstacle.cs" />
-     <Compile Include="Assets\Script\ObstacleManager.cs" />
      <Compile Include="Assets\Script\Player.cs" />
-     <Compile Include="Assets\Script\Train.cs" />
-     <Compile Include="Assets\Script\TrainStatus.cs" />
+     <Compile Include="Assets\Script\TrainScene\Coin.cs" />
+     <Compile Include="Assets\Script\TrainScene\CoinStatus.cs" />
+     <Compile Include="Assets\Script\TrainScene\HealthStatus.cs" />
+     <Compile Include="Assets\Script\TrainScene\ItemManager.cs" />
+     <Compile Include="Assets\Script\TrainScene\Obstacle.cs" />
+     <Compile Include="Assets\Script\TrainScene\ObstacleManager.cs" />
+     <Compile Include="Assets\Script\TrainScene\TimeManager.cs" />
+     <Compile Include="Assets\Script\TrainScene\Train.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
