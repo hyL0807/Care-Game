@@ -48,8 +48,12 @@
   <ItemGroup>
      <Compile Include="Assets\Script\BackgroundScroll.cs" />
      <Compile Include="Assets\Script\Box.cs" />
+     <Compile Include="Assets\Script\ClickManager.cs" />
+     <Compile Include="Assets\Script\ClosePopup.cs" />
      <Compile Include="Assets\Script\Dog.cs" />
+     <Compile Include="Assets\Script\OnMouse.cs" />
      <Compile Include="Assets\Script\Player.cs" />
+     <Compile Include="Assets\Script\TrainGame.cs" />
      <Compile Include="Assets\Script\TrainScene\Coin.cs" />
      <Compile Include="Assets\Script\TrainScene\CoinStatus.cs" />
      <Compile Include="Assets\Script\TrainScene\HealthStatus.cs" />
