@@ -60,6 +60,7 @@
      <Compile Include="Assets\Script\TrainScene\ItemManager.cs" />
      <Compile Include="Assets\Script\TrainScene\Obstacle.cs" />
      <Compile Include="Assets\Script\TrainScene\ObstacleManager.cs" />
+     <Compile Include="Assets\Script\TrainScene\RuleText.cs" />
      <Compile Include="Assets\Script\TrainScene\TimeManager.cs" />
      <Compile Include="Assets\Script\TrainScene\Train.cs" />
   </ItemGroup>
