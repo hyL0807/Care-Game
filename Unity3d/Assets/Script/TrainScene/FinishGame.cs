@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ClosePopup : MonoBehaviour {
-
-	public GameObject Popup;
+public class FinishGame : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -17,11 +15,10 @@ public class ClosePopup : MonoBehaviour {
 			Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.zero);
 			
-			if (hit.collider != null && hit.collider.name == "x")
+			if (hit.collider != null && hit.collider.name == "FinishPopup")
 			{
-				Popup.gameObject.SetActive(false);
+				Application.LoadLevel("main");
 			}
-
 		}
 	}
 }

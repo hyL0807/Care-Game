@@ -51,16 +51,17 @@
      <Compile Include="Assets\Script\ClickManager.cs" />
      <Compile Include="Assets\Script\ClosePopup.cs" />
      <Compile Include="Assets\Script\Dog.cs" />
+     <Compile Include="Assets\Script\GamePopupManager.cs" />
      <Compile Include="Assets\Script\OnMouse.cs" />
      <Compile Include="Assets\Script\Player.cs" />
-     <Compile Include="Assets\Script\TrainGame.cs" />
+     <Compile Include="Assets\Script\PlayerStatus.cs" />
      <Compile Include="Assets\Script\TrainScene\Coin.cs" />
-     <Compile Include="Assets\Script\TrainScene\CoinStatus.cs" />
+     <Compile Include="Assets\Script\TrainScene\FinishGame.cs" />
      <Compile Include="Assets\Script\TrainScene\HealthStatus.cs" />
      <Compile Include="Assets\Script\TrainScene\ItemManager.cs" />
      <Compile Include="Assets\Script\TrainScene\Obstacle.cs" />
      <Compile Include="Assets\Script\TrainScene\ObstacleManager.cs" />
-     <Compile Include="Assets\Script\TrainScene\RuleText.cs" />
+     <Compile Include="Assets\Script\TrainScene\Pause.cs" />
      <Compile Include="Assets\Script\TrainScene\TimeManager.cs" />
      <Compile Include="Assets\Script\TrainScene\Train.cs" />
   </ItemGroup>

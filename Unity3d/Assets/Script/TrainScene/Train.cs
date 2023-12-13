@@ -8,8 +8,13 @@ public class Train : MonoBehaviour {
 	float xScreenHalfSize;
 	float yScreenHalfSize;
 
-	public static int hp = 3;
-	public static int coin = 0;
+	public int hp = 3;
+	public int c = 0;
+
+	public GameObject finishPopup;
+
+	public GUIText coinnum1;
+	public GUIText coinnum2;
 
 	// Use this for initialization
 	void Start () {
@@ -23,17 +28,24 @@ public class Train : MonoBehaviour {
 
 		lPosX = -xScreenHalfSize;
 		rPosX = xScreenHalfSize;
+		
 	}
 
 	void getDamage()
 	{
 		hp -= 1;
-		if (hp < 0) hp = 0;
+		if (hp <= 0)
+		{
+			finishPopup.SetActive(true);
+			PlayerStatus.coin += c;
+		}
 	}
 
 	void getCoin()
     {
-		coin += 1;
+		c += 1;
+		coinnum1.text = c.ToString ();
+		coinnum2.text = c.ToString ();
     }
 
 	// Update is called once per frame

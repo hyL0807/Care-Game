@@ -1,17 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CoinStatus : MonoBehaviour {
+public class PlayerStatus : MonoBehaviour {
 
-	public GUIText coinText;
+	public static int coin = 0;
+
+	public GUIText coinNum;
 
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		coinText.text = Train.coin.ToString();
+		coinNum.text = coin.ToString ();
 	}
 }

@@ -15,7 +15,7 @@ public class TimeManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		time += Time.deltaTime;
-		timeText.text = "Time : " + time.ToString("N2");
+		timeText.text = "Time : " + time.ToString("N1")+"sec";
 	}
 
 }

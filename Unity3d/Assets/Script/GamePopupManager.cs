@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ClosePopup : MonoBehaviour {
+public class GamePopupManager : MonoBehaviour {
 
-	public GameObject Popup;
+	public GameObject GamePopup;
 
 	// Use this for initialization
 	void Start () {
@@ -19,9 +19,14 @@ public class ClosePopup : MonoBehaviour {
 			
 			if (hit.collider != null && hit.collider.name == "x")
 			{
-				Popup.gameObject.SetActive(false);
+				GamePopup.gameObject.SetActive(false);
 			}
 
+			if (hit.collider != null && hit.collider.name == "trainrail")
+			{
+				Application.LoadLevel("train");
+			}
+			
 		}
 	}
 }
