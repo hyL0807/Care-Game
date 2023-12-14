@@ -50,6 +50,7 @@
      <Compile Include="Assets\Script\Box.cs" />
      <Compile Include="Assets\Script\ClickManager.cs" />
      <Compile Include="Assets\Script\ClosePopup.cs" />
+     <Compile Include="Assets\Script\DartScene\DustballMove.cs" />
      <Compile Include="Assets\Script\Dog.cs" />
      <Compile Include="Assets\Script\GamePopupManager.cs" />
      <Compile Include="Assets\Script\OnMouse.cs" />
