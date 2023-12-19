@@ -50,7 +50,8 @@
      <Compile Include="Assets\Script\Box.cs" />
      <Compile Include="Assets\Script\ClickManager.cs" />
      <Compile Include="Assets\Script\ClosePopup.cs" />
-     <Compile Include="Assets\Script\DartScene\DustballMove.cs" />
+     <Compile Include="Assets\Script\DartScene\BackgroundDust.cs" />
+     <Compile Include="Assets\Script\DartScene\DustballDestroy.cs" />
      <Compile Include="Assets\Script\DartScene\Target.cs" />
      <Compile Include="Assets\Script\DartScene\TargetManager.cs" />
      <Compile Include="Assets\Script\DartScene\WestDog.cs" />

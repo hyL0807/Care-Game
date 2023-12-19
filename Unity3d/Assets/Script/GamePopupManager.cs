@@ -26,6 +26,11 @@ public class GamePopupManager : MonoBehaviour {
 			{
 				Application.LoadLevel("train");
 			}
+
+			if (hit.collider != null && hit.collider.name == "dart")
+			{
+				Application.LoadLevel("dart");
+			}
 			
 		}
 	}
