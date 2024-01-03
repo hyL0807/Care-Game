@@ -6,11 +6,11 @@ public class Target : MonoBehaviour {
 	public Sprite[] img;
 	SpriteRenderer spriteRenderer;
 
-	public float rayDistance = 100f;
+	private GameObject dog;
 
 	// Use this for initialization
 	void Start () {
-	
+		dog = GameObject.Find ("WestDog3");
 	}
 	
 	// Update is called once per frame
@@ -25,8 +25,20 @@ public class Target : MonoBehaviour {
 			{
 				hit.collider.gameObject.GetComponent<SpriteRenderer>().sprite = img[0];
 				Destroy(hit.transform.gameObject,1); //destroy after 1sec
+				dog.transform.SendMessage("getTarget");
 			}
 
+			if (hit.collider != null && hit.collider.tag == "BoneTarget")
+			{
+				hit.collider.gameObject.GetComponent<SpriteRenderer>().sprite = img[0];
+				Destroy(hit.transform.gameObject,1); //destroy after 1sec
+				dog.transform.SendMessage("wrongTarget");
+			}
+
+		}
+		else
+		{
+			Destroy (gameObject,1);
 		}
 	}
 }

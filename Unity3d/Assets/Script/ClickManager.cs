@@ -23,6 +23,11 @@ public class ClickManager : MonoBehaviour {
 				GamePopup.gameObject.SetActive(true);
 			}
 
+			if (hit.collider != null && hit.collider.name == "Store")
+			{
+				Application.LoadLevel("store");
+			}
+
 
 		}
 	}

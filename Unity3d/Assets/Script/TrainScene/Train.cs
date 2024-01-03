@@ -8,8 +8,11 @@ public class Train : MonoBehaviour {
 	float xScreenHalfSize;
 	float yScreenHalfSize;
 
+	GameObject t;
+
 	public int hp = 3;
 	public int c = 0;
+	public int timecoin = 0;
 
 	public GameObject finishPopup;
 
@@ -28,17 +31,15 @@ public class Train : MonoBehaviour {
 
 		lPosX = -xScreenHalfSize;
 		rPosX = xScreenHalfSize;
+
+		t = GameObject.Find("Timer");
 		
 	}
 
 	void getDamage()
 	{
 		hp -= 1;
-		if (hp <= 0)
-		{
-			finishPopup.SetActive(true);
-			PlayerStatus.coin += c;
-		}
+		if (hp <= 0) finishGame();
 	}
 
 	void getCoin()
@@ -47,6 +48,14 @@ public class Train : MonoBehaviour {
 		coinnum1.text = c.ToString ();
 		coinnum2.text = c.ToString ();
     }
+
+	void finishGame()
+	{
+		timecoin = (int)(t.GetComponent<TimeManager> ().time * 0.5);
+		PlayerStatus.coin += c;
+		PlayerStatus.coin += timecoin;
+		finishPopup.SetActive(true);
+	}
 
 	// Update is called once per frame
 	void Update () {

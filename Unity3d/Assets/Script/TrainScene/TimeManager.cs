@@ -4,8 +4,9 @@ using System.Collections;
 public class TimeManager : MonoBehaviour {
 
 	public GUIText timeText;
+	public GUIText finishtimeText;
 
-	private float time = 0.00f;
+	public float time = 0.00f;
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +17,7 @@ public class TimeManager : MonoBehaviour {
 	void Update () {
 		time += Time.deltaTime;
 		timeText.text = "Time : " + time.ToString("N1")+"sec";
+		finishtimeText.text = "Time : " + time.ToString("N1")+"sec";
 	}
 
 }

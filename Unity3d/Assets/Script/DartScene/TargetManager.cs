@@ -3,9 +3,9 @@ using System.Collections;
 
 public class TargetManager : MonoBehaviour {
 
-	public GameObject target;
-	public float spawnTimer = 2.0f;
+	public GameObject[] randomTargets;
 
+	public float spawnTimer = 2.0f;
 	private float resetTime = 1.0f;
 
 	Vector2 RandomPos()
@@ -17,6 +17,15 @@ public class TargetManager : MonoBehaviour {
 
 		return randomPos;
 	}
+
+	GameObject RandomObject()
+	{
+		int select = Random.Range (0, randomTargets.Length);
+		GameObject selectedObject = randomTargets [select];
+
+		return selectedObject;
+	}
+
 	// Use this for initialization
 	void Start () {
 		resetTime = spawnTimer;
@@ -27,7 +36,7 @@ public class TargetManager : MonoBehaviour {
 		spawnTimer -= Time.deltaTime;
 		if(spawnTimer <= 0.0f)
 		{
-			Instantiate(target, RandomPos(), Quaternion.identity);
+			Instantiate(RandomObject(), RandomPos(), Quaternion.identity);
 			spawnTimer = resetTime;
 		}
 	}

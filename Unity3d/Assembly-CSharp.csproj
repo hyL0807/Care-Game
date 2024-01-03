@@ -49,10 +49,12 @@
      <Compile Include="Assets\Script\BackgroundScroll.cs" />
      <Compile Include="Assets\Script\Box.cs" />
      <Compile Include="Assets\Script\ClickManager.cs" />
-     <Compile Include="Assets\Script\ClosePopup.cs" />
      <Compile Include="Assets\Script\DartScene\BackgroundDust.cs" />
+     <Compile Include="Assets\Script\DartScene\BoneStatus.cs" />
      <Compile Include="Assets\Script\DartScene\DustballDestroy.cs" />
      <Compile Include="Assets\Script\DartScene\Target.cs" />
+     <Compile Include="Assets\Script\DartScene\TargetCoin.cs" />
+     <Compile Include="Assets\Script\DartScene\TargetCounter.cs" />
      <Compile Include="Assets\Script\DartScene\TargetManager.cs" />
      <Compile Include="Assets\Script\DartScene\WestDog.cs" />
      <Compile Include="Assets\Script\Dog.cs" />
@@ -60,13 +62,15 @@
      <Compile Include="Assets\Script\OnMouse.cs" />
      <Compile Include="Assets\Script\Player.cs" />
      <Compile Include="Assets\Script\PlayerStatus.cs" />
+     <Compile Include="Assets\Script\Popup\ClosePopup.cs" />
+     <Compile Include="Assets\Script\Popup\FinishGame.cs" />
+     <Compile Include="Assets\Script\Popup\Pause.cs" />
      <Compile Include="Assets\Script\TrainScene\Coin.cs" />
-     <Compile Include="Assets\Script\TrainScene\FinishGame.cs" />
      <Compile Include="Assets\Script\TrainScene\HealthStatus.cs" />
      <Compile Include="Assets\Script\TrainScene\ItemManager.cs" />
      <Compile Include="Assets\Script\TrainScene\Obstacle.cs" />
      <Compile Include="Assets\Script\TrainScene\ObstacleManager.cs" />
-     <Compile Include="Assets\Script\TrainScene\Pause.cs" />
+     <Compile Include="Assets\Script\TrainScene\TimeCoin.cs" />
      <Compile Include="Assets\Script\TrainScene\TimeManager.cs" />
      <Compile Include="Assets\Script\TrainScene\Train.cs" />
   </ItemGroup>
