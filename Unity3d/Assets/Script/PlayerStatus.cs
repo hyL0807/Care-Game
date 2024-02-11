@@ -4,6 +4,8 @@ using System.Collections;
 public class PlayerStatus : MonoBehaviour {
 
 	public static int coin = 0;
+	public static GameObject[] accessory;
+	public static GameObject[] furniture;
 
 	public GUIText coinNum;
 
