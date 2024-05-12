@@ -37,7 +37,7 @@ public class WestDog : MonoBehaviour {
 
 	void finishGame()
 	{
-		tc = (int)(t * 0.5);
+		tc = (int)(t);
 		PlayerStatus.coin += tc;
 		targetcoin.text = tc.ToString ();
 		finishPopup.SetActive(true);

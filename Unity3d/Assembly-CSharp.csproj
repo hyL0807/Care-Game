@@ -65,7 +65,7 @@
      <Compile Include="Assets\Script\Popup\ClosePopup.cs" />
      <Compile Include="Assets\Script\Popup\FinishGame.cs" />
      <Compile Include="Assets\Script\Popup\Pause.cs" />
-     <Compile Include="Assets\Script\StoreClick.cs" />
+     <Compile Include="Assets\Script\StoreScene\StoreClick.cs" />
      <Compile Include="Assets\Script\TrainScene\Coin.cs" />
      <Compile Include="Assets\Script\TrainScene\HealthStatus.cs" />
      <Compile Include="Assets\Script\TrainScene\ItemManager.cs" />

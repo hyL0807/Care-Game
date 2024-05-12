@@ -3,6 +3,8 @@ using System.Collections;
 
 public class StoreClick : MonoBehaviour {
 
+	private GameObject[] StoreItems;
+
 	// Use this for initialization
 	void Start () {
 	

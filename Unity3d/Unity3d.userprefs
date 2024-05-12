@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\StoreClick.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\DartScene\TargetManager.cs">
     <Files>
-      <File FileName="Assets\Script\PlayerStatus.cs" Line="8" Column="38" />
-      <File FileName="Assets\Script\ClickManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\StoreClick.cs" Line="8" Column="2" />
+      <File FileName="Assets\Script\BackgroundScroll.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\DartScene\Target.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\DartScene\TargetManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

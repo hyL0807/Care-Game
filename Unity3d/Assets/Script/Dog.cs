@@ -19,7 +19,7 @@ public class Dog : MonoBehaviour {
 
 			RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.zero);
 
-			if (hit.collider != null && hit.collider.name == "dog")
+			if (hit.collider != null && hit.collider.name == "Dog")
 			{
 				transform.Translate(new Vector2(0.3f, 0));
 
